@@ -1,6 +1,9 @@
 # [Slicknode](https://slicknode.com "GraphQL CMS + Framework") 
 
-[![npm version](https://badge.fury.io/js/slicknode.svg)](https://badge.fury.io/js/slicknode) [![CircleCI](https://circleci.com/gh/slicknode/slicknode.svg?style=shield)](https://circleci.com/gh/slicknode/slicknode)
+[![npm version](https://badge.fury.io/js/slicknode.svg)](https://badge.fury.io/js/slicknode) 
+[![CircleCI](https://circleci.com/gh/slicknode/slicknode.svg?style=shield)](https://circleci.com/gh/slicknode/slicknode)
+[![License](https://img.shields.io/github/license/slicknode/slicknode)](LICENSE)
+
 
 GraphQL based Application Framework and CMS for rapid software development: 
 

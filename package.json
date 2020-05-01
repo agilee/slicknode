@@ -14,6 +14,7 @@
     "version": "oclif-dev readme && git add README.md",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "lint:fix": "tslint -c tslint.json --fix 'src/**/*.ts'",
+    "coverage": "nyc --extension .ts --reporter=lcov --reporter=text-summary mocha --forbid-only \"test/**/*.test.ts\" && coveralls < coverage/lcov.info",
     "build": "tsc",
     "clean": "rimraf lib/",
     "watch": "tsc --watch",
@@ -81,6 +82,7 @@
   "author": "Ivo Meißner",
   "license": "MIT",
   "devDependencies": {
+    "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@oclif/dev-cli": "^1.22.0",
     "@oclif/test": "^1.2.4",
     "@types/adm-zip": "^0.4.31",
@@ -110,6 +112,7 @@
     "@types/wrap-ansi": "^3.0.0",
     "chai": "^4.1.2",
     "copyfiles": "^2.1.0",
+    "coveralls": "^3.1.0",
     "mocha": "^5.2.0",
     "mocha-sinon": "^2.1.0",
     "nock": "^10.0.6",

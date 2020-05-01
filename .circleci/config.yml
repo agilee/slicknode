@@ -24,10 +24,8 @@ jobs:
           name: Testing
           command: yarn test
       - run:
-          name: Submitting code coverage to codecov
-          command: |
-            ./node_modules/.bin/nyc report --reporter text-lcov > coverage.lcov
-            curl -s https://codecov.io/bash | bash
+          name: Submitting code coverage to coveralls
+          command: yarn coverage
   node-8:
     <<: *test
     docker:
